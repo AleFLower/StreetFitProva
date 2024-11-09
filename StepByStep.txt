@@ -1,0 +1,48 @@
+-Login:
+
+Lets design first the login and signup form. Creo file FXMLDocument.fxml e lo metto nella cartella del progetto, package.
+
+Prima di tutto abbiamo creato interfaccia per sign in, poi facciamo quella per sign up, semplicemente duplicando quella li.
+
+Assegno poi fxid a tutti gli oggetti sia di signin che di signup, perché poi dovremo importare tutto nel controllore.
+
+-Vado nel controllore di FXML
+clicco in scenebuilder su showsampleController e copio tutto.
+
+NOTA BENE: devi rebuiuldare tutto prima di eseguire!!!!! Sennò grazie che ti da errore. Inoltre attenzione a cosa rinomini
+-------------------------------------------------------
+07/11
+
+Sto lavorando su chiusura della finestra "botton X" e chiusura "-", ho messo metodi nel file FXMLDocumentController, e ho messo in SceneBuilder on action e nome metodo per quei bottoni
+
+-Switch della finestra in base a se clicchi su create a new account o already have one. (tutto cio va gestito sempre nel FXML controller)
+
+
+-Ora procedo nel creare il database! Per ora lo creo con un approccio "ad minchiam", poi applicherò i patterns. Intanto butto giu le basi. Lo creo da prompt dei comandi. Qui comincio a fare le mie sostituzioni nel codice di Youtube per il mio progetto. Admin -> trainer. DB name = streetfitprova. Puoi usare show columns from trainer per vedere le info.
+Il trainer per ora è il nostro admin. Tutto cio fatto nella classe Database.java.
+
+-Ora diamo una funzione a signin dentro il controller fxml. public signin: ci mettiamo dentro la query seleziono il trainer con certo username e password, tiro fuori l'informazione(facciamo tutto in modo parametrico come visto in basi di dati,  con setString). Ora, facciamo dei controlli: se il campo username o psw vuoti -> mando un messaggio alert, usando classe Alert: La classe Alert in JavaFX è una componente grafica utilizzata per mostrare finestre di dialogo all'utente. È comunemente usata per visualizzare messaggi di errore, avvisi, informazioni o richieste di conferma. Metto un titolo per questa finestra e imposto come uscirà all'utente, dicendogli guarda che devi inserire tutti i campi.
+
+Se invece ha inserito tutti i campi, e il result set non è vuoto, quindi effettivamente è presente un trainer con quelle credenziali, allora dico successfully login 
+
+In definitiva:
+Connessione al Database e Preparazione della Query: Il codice si connette al database e prepara una query per selezionare un record dalla tabella trainer dove il username e la password corrispondono ai valori inseriti dall'utente.
+Controllo delle Credenziali: Se i campi username o password sono vuoti, mostra un alert di errore che chiede di compilare i campi. Altrimenti, esegue la query:
+Se la query restituisce un risultato, mostra un alert di "login riuscito".
+Se non trova corrispondenze, mostra un alert di errore indicando che le credenziali sono sbagliate.
+
+-Ora, popoliamo il database, mettiamoci un po di roba. INSERT INTO... id = 1, trainer con email, user e pwd.
+
+-tutto cio, ovvero  il metodo signin, ma usato quando premo pulsante login -> vado in scenebuilder, e metto on action signin.
+Faccio ora delle prove di esecuzione per vedere i vari messaggi che arrivano.
+
+------------------------------------
+(52:20)
+09/11
+
+Ora, creiamo la dashboard, dopo che fai il signin, il sistema ti invia alla dashboard.
+Attenzione! Questo passaggio serve per switchare anche per altre cose! Quindi presta attenzione e scrivi passaggi!.
+
+-
+
+

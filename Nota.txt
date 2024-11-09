@@ -1,0 +1,5 @@
+Unable to create javax script engine for javascript,questo è un avviso comune in alcuni progetti Java con JavaFX su NetBeans. Questo messaggio indica che NetBeans sta tentando di usare un motore JavaScript (javax.script.ScriptEngine) per eseguire script JavaScript integrati, ma non riesce a trovarlo. Questo problema è spesso dovuto a una delle seguenti cause:
+
+1. Java 11 o Versioni Successive
+A partire da Java 11, il motore Nashorn (che gestiva JavaScript all'interno di Java) è stato deprecato e successivamente rimosso in Java 15. Alcuni strumenti di build come NetBeans continuano a cercare di utilizzarlo, causando l'errore.
+Anche se l'avviso compare, il tuo progetto viene comunque compilato e funzionerà normalmente, perché questo componente non è necessario per la maggior parte delle applicazioni.

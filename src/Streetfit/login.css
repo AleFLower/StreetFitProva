@@ -1,0 +1,80 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 5 nov 2024, 18:25:32
+    Author     : aless
+*/
+
+.bg-form{
+    -fx-background-color: linear-gradient(to top right,  #003366, #66ccff);
+     -fx-text-inner-color:#fff;
+}
+
+.close{
+    -fx-background-color: transparent;
+    -fx-cursor:hand
+}
+
+.label-signin {
+    -fx-text-fill: #fff; /* Colore celeste chiaro */
+    -fx-font-size: 24px; /* Dimensione del testo */
+    -fx-font-weight: bold; /* Grassetto */
+    -fx-font-family: "Arial"; /* Font semplice e moderno */
+    -fx-effect: dropshadow(one-pass-box, rgba(0, 51, 102, 0.5), 5, 0.3, 0, 1); /* Ombra */
+}
+
+.close:hover{
+    -fx-background-color: #ff5151;
+}
+
+.minimize{
+    -fx-background-color:transparent;
+    -fx-cursor:hand;
+    
+}
+
+.minimize:hover{
+    -fx-background-color: #0979b0;
+}
+
+.textfield{
+    -fx-background-color: transparent;
+    -fx-border-color:  #4682B4;
+    -fx-border-width:0px 0px .4px 0px;
+    -fx-text-inner-color:#fff;
+     -fx-text-inner-color: #f0f0f0; /* Grigio chiarissimo */
+    -fx-prompt-text-fill: rgba(240, 240, 240, 0.8);
+ 
+}
+
+.textfield.focused{
+    -fx-border-color: #fb6363;
+    -fx-border-width: 0px 0px 1px 0px;
+}
+
+.login-btn{
+    -fx-background-color: linear-gradient(to bottom right,#35529d,#2371d0);
+    -fx-background-radius: 8px;
+    -fx-text-fill: #fff;
+    -fx-font-size:14px;
+    -fx-cursor: hand
+}
+
+.login-btn:hover{
+    -fx-background-color: linear-gradient(to bottom right, #3862c2,#4284d0);
+}
+
+.hyperlink {
+    -fx-text-fill: #66ccff; /* Colore celeste chiaro */
+    -fx-font-size: 12px; /* Dimensione del testo */
+    -fx-font-weight: bold; /* Grassetto per evidenziare il testo */
+    -fx-underline: true; /* Sottolinea il testo come un hyperlink */
+}
+
+.hyperlink:hover {
+    -fx-text-fill: #0099cc; /* Colore più scuro al passaggio del mouse */
+    -fx-underline: true; /* Mantiene la sottolineatura anche al passaggio del mouse */
+}
+
